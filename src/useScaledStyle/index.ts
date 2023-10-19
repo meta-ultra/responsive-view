@@ -1,0 +1,1 @@
+export { useScaledStyle } from "./useScaledStyle";
