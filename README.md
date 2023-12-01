@@ -1,6 +1,6 @@
 # Welcome to `@meta-ultra/responsive-view`
 
-Inspired by autofix.js, `@meta-ultra/responsive-view` provides a pretty much preciser React based responsive solution on Big Screen.
+Inspired by autofix.js, `@meta-ultra/responsive-view` provides a pretty much preciser React based responsive solution on Big Screen or Digital Cockpit.
 
 ## 👶 Author
 
