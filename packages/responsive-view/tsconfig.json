@@ -28,7 +28,7 @@
     "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "@/*": [
-        "./src/*"
+        "packages/src/*"
       ]
     }, /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
@@ -105,9 +105,9 @@
   "exclude": [
     "dist",
     "node_modules",
-    "src/**/*.stories.tsx",
-    "src/**/*.stories.ts",
-    "src/**/*.stories.jsx",
-    "src/**/*.stories.js"
+    "packages/src/**/*.stories.tsx",
+    "packages/src/**/*.stories.ts",
+    "packages/src/**/*.stories.jsx",
+    "packages/src/**/*.stories.js"
   ],
 }

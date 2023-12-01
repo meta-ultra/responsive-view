@@ -1,34 +1,26 @@
-# Responsive View
+# Welcome to `@meta-ultra/app-router` Solution
 
-Scale-based responsive solution for digital big screen.
+If you're looking for some way to introduce Next.js App Router into pure client rendering project, THERE YOU ARE!
 
-## Setup
+🎆 `@meta-ultra/app-router` - a function complete App Router solution to make React Router v6 on steroids.
 
-```bash
-pnpm i
-```
+## 👪 Family Members
 
-## Bundle
+- `@meta-ultra/app-router` provides the core functionalities and React components to allow for App Router structuring.(status: v0.3.2)
+- `@meta-ultra/app-router-auth` gives an out of box authentication and authorization solution which can work alone or integrate with `@meta-ultra/app-router` perfectly.(status: v0.2.1)
+- `@meta-ultra/app-router-cli` sets up the router configuration according the structure of your app folder automatically.(status: v0.4.0)
+- `@meta-ultra/app-router-webpack-plugin` allows for integrating `@meta-ultra/app-router-cli` with Webpack.(status: in the plan)
+- `@meta-ultra/app-router-rollup-plugin`allows for integrating `@meta-ultra/app-router-cli` with Rollup or Vite.(status: in the plan)
 
-```bash
-pnpm build
-```
+## 👶 Author
 
-## Limitation
+Hey, friends. I'm John Huang, a full stack developer majorly code with React, Next.js, GraphQL, TailwindCSS, Taro and SpringBoot. Feel free to contact with me 😃
 
-```jsx
-const Demo = () => {
-  return (
-    <div id="parent">
-      <ResponsiveView style={{height: 500}} />
-    </div>
-  )
-}
-```
+- GitHub: <https://github.com/fsjohnhuang>
+- LinkedIn: <https://www.linkedin.com/in/fsjohnhuang>
+- Blog: <https://fsjohnhuang.cnblogs.com/>
 
-The ResponsiveView will shrink to height of 400, but the height of its parent is still 500.
+## 🤝 Contributing
 
-## TODO
-
-1. Output commonjs2 module system version of bundle.
-2. Auto detect the parent's size to determine using absolute positioning or not.
+Contributions, issues and feature requests are welcome!
+Feel free to check [issues page](https://github.com/meta-ultra/app-router/issues).

@@ -1,9 +1,9 @@
 import { useContext, useMemo } from "react";
-import { Context } from "@/ResponsiveConfig/ResponsiveConfigContext";
-import { useScale, KeyProps } from "@/useScale";
+import { Context } from "packages/src/ResponsiveConfig/ResponsiveConfigContext";
+import { useScale, KeyProps } from "packages/src/useScale";
 
-export { ResponsiveConfigProvider, ResponsiveMode } from "@/ResponsiveConfig";
-export { ResponsiveView } from "@/ResponsiveView";
+export { ResponsiveConfigProvider, ResponsiveMode } from "packages/src/ResponsiveConfig";
+export { ResponsiveView } from "packages/src/ResponsiveView";
 
 const useScaledSize = (
   {

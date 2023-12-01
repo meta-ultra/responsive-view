@@ -1,6 +1,5 @@
-node_modules
+# Ignore artifacts:
 dist
 build
 bundle
-.vscode
-*.config.js
+*.min.css

@@ -1,4 +1,5 @@
-node_modules
+# Ignored artifacts:
 dist
 build
 bundle
+*.min.css

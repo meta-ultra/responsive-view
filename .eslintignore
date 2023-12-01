@@ -1,6 +1,13 @@
-node_modules
+# Ignore artifacts:
 dist
 build
 bundle
-.vscode
+*.min.js
+
+# Ignore scripts:
+**/scripts
+
+# Ignore configurations:
 *.config.js
+*.conf.js
+*rc.js
