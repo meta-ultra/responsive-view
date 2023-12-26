@@ -1,4 +1,4 @@
-import { ResponsiveMode } from "../ResponsiveConfig/ResponsiveConfigContext";
+import { ResponsiveMode } from "../ResponsiveContext";
 
 export interface ScaleXY {
   scaleX: number;

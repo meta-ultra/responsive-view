@@ -7,13 +7,6 @@
   "jsnext:main": "./dist/responsive-view.esm.js",
   "main": "./dist/responsive-view.cjs.js",
   "typings": "./dist/types",
-  "scripts": {
-    "prepare": "husky install",
-    "build:esm": "tsc && tsc-alias",
-    "build:types": "cross-env-shell OUT_DIR=./dist/types/ \"tsc --outDir $OUT_DIR --declaration --emitDeclarationOnly && tsc-alias --outDir $OUT_DIR\"",
-    "clean": "rimraf ./dist",
-    "build": "pnpm clean && pnpm run \"/^build:.*/\"",
-  },
   "author": "fsjohnhuang",
   "license": "MIT",
   "devDependencies": {

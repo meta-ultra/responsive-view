@@ -1,9 +1,9 @@
 import { useLayoutEffect, useState, useMemo } from "react";
-import { ResponsiveMode } from "../ResponsiveConfig/ResponsiveConfigContext";
+import { ResponsiveMode } from "../ResponsiveContext";
 import { calcScaleCache, ScaleXY } from "./calcScaleCache";
 import { keepScaling } from "./keepScaling";
 
-interface KeyProps {
+type KeyProps = {
   draftWidth: number;
   draftHeight: number;
   mode: ResponsiveMode;
