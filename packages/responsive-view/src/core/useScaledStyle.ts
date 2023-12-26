@@ -1,5 +1,5 @@
-import { CSSProperties, useMemo } from "react";
-import { ScaleXY } from "./core/calcScaleCache";
+import { type CSSProperties, useMemo } from "react";
+import { type ScaleXY } from "./calcScaleCache";
 
 const parsePixel = (value: string | number) => (typeof value == "number" ? value : parseInt(value));
 

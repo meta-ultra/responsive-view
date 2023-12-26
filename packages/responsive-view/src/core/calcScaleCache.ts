@@ -1,6 +1,6 @@
 import { ResponsiveMode } from "../ResponsiveContext";
 
-export interface ScaleXY {
+type ScaleXY = {
   scaleX: number;
   scaleY: number;
 }
@@ -33,4 +33,5 @@ const calcScaleCache = (key: string, invalid = false) => {
   return cache.get(key) as ScaleXY;
 };
 
+export type { ScaleXY };
 export { calcScaleCache };
