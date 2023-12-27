@@ -2,12 +2,12 @@ import { useMemo } from "react";
 import { useResponsiveContext } from "./ResponsiveContext";
 import { useScale, KeyProps } from "./core";
 
-type useScaledSizeType = (props: {
+type useScaledSizeType = (props?: {
   keyProps?: KeyProps; // the draft size, minimum scaling ratio and responsive mode
   scaling?: boolean; // watch resize event of window
-  width?: number;  // the screen width
+  width?: number; // the screen width
   height?: number; // the screen height
-}) =>  null | {
+}) => null | {
   width: number;
   height: number;
 };
@@ -16,12 +16,7 @@ type useScaledSizeType = (props: {
  * get the scaled size on top of screen size and draft size.
  */
 const useScaledSize: useScaledSizeType = (
-  {
-    keyProps,
-    scaling,
-    width,
-    height,
-  } = { scaling: true }
+  { keyProps, scaling, width, height } = { scaling: true }
 ) => {
   const context = useResponsiveContext();
   const scaleXY = useScale(keyProps || context, scaling);
@@ -39,5 +34,5 @@ const useScaledSize: useScaledSizeType = (
   }, [scaleXY, w, h]);
 };
 
-export type { useScaledSizeType }
-export default useScaledSize
+export type { useScaledSizeType };
+export default useScaledSize;

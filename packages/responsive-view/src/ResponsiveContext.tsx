@@ -18,14 +18,16 @@ const Context = createContext<ResponsiveConfig | undefined>(undefined);
 const useResponsiveContext = () => {
   const context = useContext(Context);
   if (!context) {
-    throw Error(`[@meta-ultra/responsive-view] useResponsiveContext must be inside ResponsiveProvider`);
+    throw Error(
+      `[@meta-ultra/responsive-view] useResponsiveContext must be inside ResponsiveProvider`
+    );
   }
   return context;
-}
+};
 
 type ResponsiveProviderProps = PropsWithChildren<{
-  config: ResponsiveConfig;
-}>
+  config?: ResponsiveConfig;
+}>;
 
 const ResponsiveProvider: FC<ResponsiveProviderProps> = ({
   config = {
@@ -36,12 +38,8 @@ const ResponsiveProvider: FC<ResponsiveProviderProps> = ({
   },
   children,
 }) => {
-  return (
-    <Context.Provider value={config}>
-      {children}
-    </Context.Provider>
-  )
-}
+  return <Context.Provider value={config}>{children}</Context.Provider>;
+};
 
-export type { ResponsiveProviderProps, ResponsiveConfig }
-export { ResponsiveMode, ResponsiveProvider, useResponsiveContext }
+export type { ResponsiveProviderProps, ResponsiveConfig };
+export { ResponsiveMode, ResponsiveProvider, useResponsiveContext };
