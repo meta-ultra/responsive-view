@@ -1,5 +1,12 @@
 # Welcome to `@meta-ultra/responsive-view`
 
+<div>
+  <img style="display:inline;" src="https://img.shields.io/github/package-json/v/meta-ultra/responsive-view?filename=packages%2Fresponsive-view%2Fpackage.json">
+  <img style="display:inline;" src="https://img.shields.io/bundlephobia/min/%40meta-ultra/responsive-view">
+  <img style="display:inline;" src="https://img.shields.io/bundlejs/size/%40meta-ultra/responsive-view">
+  <img style="display:inline;" src="https://img.shields.io/github/license/meta-ultra/responsive-view">
+</div>
+
 Inspired by autofix.js, `@meta-ultra/responsive-view` provides a pretty much preciser React based responsive solution for **Big Screen** or **Digital Cockpit**.
 
 ## 🏠 Installation
