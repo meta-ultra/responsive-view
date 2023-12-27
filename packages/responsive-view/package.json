@@ -1,7 +1,7 @@
 {
   "name": "@meta-ultra/responsive-view",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "scripts": {
     "clean": "rimraf ./dist",
